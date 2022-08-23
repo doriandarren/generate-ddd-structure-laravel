@@ -1,0 +1,15 @@
+{
+    "name": "infinito/generate-ddd-structure-laravel",
+    "autoload": {
+        "psr-4": {
+            "Infinito\\GenerateDDDStructure\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Dorian",
+            "email": "doriandarren1@gmail.com"
+        }
+    ],
+    "require": {}
+}
