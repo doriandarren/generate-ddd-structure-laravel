@@ -1,5 +1,6 @@
 {
     "name": "infinito/generate-ddd-structure-laravel",
+    "description": "Generate basic folder structure in hexagonal/ddd architecture for Laravel",
     "autoload": {
         "psr-4": {
             "Infinito\\GenerateDDDStructure\\": "src/"
@@ -8,7 +9,8 @@
     "authors": [
         {
             "name": "Dorian",
-            "email": "doriandarren1@gmail.com"
+            "email": "doriandarren1@gmail.com",
+            "role": "Developer"
         }
     ],
     "require": {}
