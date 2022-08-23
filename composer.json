@@ -13,5 +13,9 @@
             "role": "Developer"
         }
     ],
-    "require": {}
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=8.0"
+    },
+    "license": "MIT"
 }
