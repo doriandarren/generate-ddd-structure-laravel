@@ -18,38 +18,38 @@ class StructureGenerator
 
         if(is_dir($path)){
 
-
+            /********************
+             * Folder Application
+             ********************/
             $pathApp = $path . '/' . $bounded . '/' . $className . '/Application';
-
-            echo $pathApp;
-
             if(!file_exists($pathApp)){
                 mkdir($pathApp, 0777, true);
             }
 
 
-
+            /********************
+             * Folder Domain
+             ********************/
             $pathDomain = $path . '/' . $bounded . '/' . $className . '/Domain';
             if(!is_dir($pathDomain)){
                 mkdir($pathDomain, 0777, true);
             }
 
+            // Folder Domain Exceptions
             $pathDomainExceptions = $path . '/' . $bounded . '/' . $className . '/Domain/Exceptions';
             if(!is_dir($pathDomainExceptions)){
                 mkdir($pathDomainExceptions, 0777, true);
             }
 
 
-
-
-
+            /***********************
+             * Folder Infrastructure
+             ***********************/
 
             $pathInf = $path . '/' . $bounded . '/' . $className . '/Infrastructure';
             if(!is_dir($pathInf)){
                 mkdir($pathInf, 0777, true);
             }
-
-
 
             $pathInfContr = $path . '/' . $bounded . '/' . $className . '/Infrastructure/Controllers';
             if(!is_dir($pathInfContr)){
@@ -61,17 +61,17 @@ class StructureGenerator
                 mkdir($pathInfRoute, 0777, true);
             }
 
-
             $pathInfServ = $path . '/' . $bounded . '/' . $className . '/Infrastructure/Services';
             if(!is_dir($pathInfServ)){
                 mkdir($pathInfServ, 0777, true);
             }
 
 
+            echo "\n Folder created successfully \n";
 
 
         }else{
-            die("Fallo al verificar carpetas");
+            die("Failed. Need to create folder \"src\"");
         }
 
 
