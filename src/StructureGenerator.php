@@ -7,7 +7,7 @@ use Infinito\GenerateDDDStructure\Helpers\GlobalSetting;
 
 class StructureGenerator
 {
-    
+
     public function create($bounded, $className)
     {
 
