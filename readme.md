@@ -14,8 +14,8 @@ class ClassName {
     public function methodName(){
         $bounded = 'Bounded';
         $className = 'User';
-        $hello = new \Infinito\GenerateDDDStructure\StructureGenerator();
-        $hello->create($bounded, $className);
+        $generator = new \Infinito\GenerateDDDStructure\StructureGenerator();
+        $generator->create($bounded, $className);
     }
 }
 ```
